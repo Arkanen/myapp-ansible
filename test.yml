@@ -3,7 +3,7 @@ hosts: localhost
 gather_facts: false
 task:
   -name: Crear namespace
-    k8s:
+    community.kubernetes.k8s:
       name: ansible-namespace
       api_version: v1
       kind: Namespace
